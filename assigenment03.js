@@ -1,56 +1,63 @@
-// function kilometerToMeter(kilometer){
-//     if(kilometer > 0){
-//         var meter = kilometer*0.001;
-//         return meter;
-//     }
-//     else{
-//         return "Parameter can not be negetive";
-//     }
-// }
+//https://github.com/sattertamim/assigenment-03
 
-// var output = kilometerToMeter(1200);
-// console.log(output);
+//********kilometer to meeter converter********
 
-// function budgetCalculator(clock, phone, laptop){
-//         if(clock >= 0 && phone >= 0 && laptop >= 0){
-//             clock = clock * 50;
-//             phone = phone * 100;
-//             laptop = laptop * 500;
-//             total = clock + phone + laptop;
-//             return total;
-//         }
-//         else{
-//             return "Please enter a value greter than 0";
-//         }
-// }
-// var totalCost = budgetCalculator(2,0,0);
-// console.log(totalCost);
+function kilometerToMeter(kilometer){
+    if(kilometer > 0){
+        var meter = kilometer*0.001;
+        return meter;
+    }
+    else{
+        return "Parameter can not be negetive";
+    }
+}
 
-// function hotelCost(day){
-//     if(day <= 10 && day >0){
-//      var   cost = day * 100;
-//         return cost;
-//     }
-//     else if (day > 10 && day <= 20)
-//     {
-//       var  remainDay = day - 10;
-//       var  cost = (10 * 100) + (remainDay * 80);
-//         return cost;
-//     }
-//     else if (day > 20)
-//     {
-//         var  remainDay = day - 20;
-//         var  cost = (10 * 100) +(10 * 80) + (remainDay * 50);
-//           return cost;
-//       }
-//       else {
-//           return "Your balance is 0";
-//       }
-//     }
+var output = kilometerToMeter(1200);
+console.log(output);
 
-//     var totalCost = hotelCost(25);
-//     console.log(totalCost);
+//****************Budget Calculator**********
+function budgetCalculator(clock, phone, laptop){
+        if(clock >= 0 && phone >= 0 && laptop >= 0){
+            clock = clock * 50;
+            phone = phone * 100;
+            laptop = laptop * 500;
+            total = clock + phone + laptop;
+            return total;
+        }
+        else{
+            return "Please enter a value greter than 0";
+        }
+}
+var totalCost = budgetCalculator(2,4,3);
+console.log(totalCost);
 
+//**********hotel cost calculator*******
+function hotelCost(day){
+    if(day <= 10 && day >0){
+     var   cost = day * 100;
+        return cost;
+    }
+    else if (day > 10 && day <= 20)
+    {
+      var  remainDay = day - 10;
+      var  cost = (10 * 100) + (remainDay * 80);
+        return cost;
+    }
+    else if (day > 20)
+    {
+        var  remainDay = day - 20;
+        var  cost = (10 * 100) +(10 * 80) + (remainDay * 50);
+          return cost;
+      }
+      else {
+          return "Your balance is 0";
+      }
+    }
+
+    var totalCost = hotelCost(25);
+    console.log(totalCost);
+
+//**************largest string finding************
 function megaFriend(friends){
     var name = friends[0];
     for(var i = 0; i < friends.length; i++){
